@@ -2,6 +2,10 @@ package com.demo;
 
 import java.io.IOException;
 
+import org.apache.commons.logging.*;
+import org.apache.commons.logging.impl.*;
+import org.apache.log4j.Level;
+
 public class CommonUtility{
     static String toHashKey(String FileName, String Url){
         String code = Integer.toHexString(  (FileName + Url).hashCode()  );
@@ -34,3 +38,4 @@ public class CommonUtility{
         }
     }
 }
+
